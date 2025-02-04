@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Input Fields */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #d72638;
+  box-shadow: 0 0 5px rgba(215, 38, 56, 0.5);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* File Input */
+input[type="file"] {
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Button */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #d72638;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #b61f32;
+  transform: scale(1.02);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Style for the Link */
+a {
+  display: inline-block;
+  font-size: 1rem;
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: darkblue;
+  transform: scale(1.05);
+}
+
+a:active {
+  color: navy;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+.spinner {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 2px solid #444;
+  box-shadow: -10px -10px 10px #6359f8, 0px -10px 10px 0px #9c32e2,
+    10px -10px 10px #f36896, 10px 0 10px #ff0b0b, 10px 10px 10px 0px #ff5500,
+    0 10px 10px 0px #ff9500, -10px 10px 10px 0px #ffb700;
+  animation: rot55 0.7s linear infinite;
+}
+
+.spinnerin {
+  border: 2px solid #444;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rot55 {
+  to {
+    transform: rotate(360deg);
+  }
+}

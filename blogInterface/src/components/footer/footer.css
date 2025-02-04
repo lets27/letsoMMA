@@ -1,0 +1,63 @@
+.footer {
+  margin-top: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  background: #1d1d1d;
+  color: #fff; /* White text for better contrast */
+  font-family: "Poppins", sans-serif; /* Add Google Fonts */
+}
+
+.lists {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin: 5px 0; /* Adjust spacing for list items */
+  font-size: 14px;
+}
+
+.left-side,
+.middle,
+.right-side {
+  flex: 1; /* Flex for equal distribution */
+  padding: 0 20px; /* Add some horizontal padding */
+}
+
+.left-side {
+  text-align: left;
+}
+
+.middle {
+  text-align: center;
+}
+
+.right-side {
+  text-align: right;
+}
+
+.footer p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.copyright {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+  color: #0a0a0a; /* Light gray for subtle copyright text */
+}

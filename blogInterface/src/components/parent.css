@@ -1,0 +1,20 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensures full height for the page */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.parent-container {
+  height: 100%;
+  display: block;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background-color: #1a1a2e; /* Deep blue for contrast */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}

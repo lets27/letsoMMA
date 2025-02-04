@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Input Fields */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #d72638; /* Changed to your color */
+  box-shadow: 0 0 5px rgba(215, 38, 56, 0.5); /* Adjusted shadow to match */
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* File Input */
+input[type="file"] {
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Button */
+.postBtn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #d72638; /* Changed to your color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.postBtn:hover {
+  background-color: #b61f32; /* Slightly darker shade for hover */
+  transform: scale(1.02);
+}
+
+.postBtn:active {
+  transform: scale(0.98);
+}
+
+/* Form Group with hover */
+.form-group:hover label {
+  color: #d72638; /* Changed to your color */
+  transition: color 0.3s ease;
+}
+
+/* Style for the Link */
+.link {
+  font-size: 1rem;
+  color: blue; /* Color matching your theme */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link:hover {
+  color: blue; /* Slightly darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.link:active {
+  color: blue; /* Even darker color when clicked */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  postBtn {
+    font-size: 14px;
+  }
+}
+
+/* From Uiverse.io by mrhyddenn */
+/* Overlay background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Centered Form */
+.form-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button inside form */
+.form-container .btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #d72638; /* Changed to your color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.spinner {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 2px solid #444;
+  box-shadow: -10px -10px 10px #6359f8, 0px -10px 10px 0px #9c32e2,
+    10px -10px 10px #f36896, 10px 0 10px #ff0b0b, 10px 10px 10px 0px #ff5500,
+    0 10px 10px 0px #ff9500, -10px 10px 10px 0px #ffb700;
+  animation: rot55 0.7s linear infinite;
+}
+
+.spinnerin {
+  border: 2px solid #444;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rot55 {
+  to {
+    transform: rotate(360deg);
+  }
+}

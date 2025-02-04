@@ -1,0 +1,73 @@
+/* Comment Holder Styles */
+.comment-holder {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.comment-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.comment-item span {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.comment-item p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin: 0;
+}
+
+/* Close Button */
+.comment-close-button {
+  width: 100px;
+  height: 35px;
+  margin-top: 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.comment-close-button:hover {
+  background-color: #a71d2a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .comment-holder {
+    padding: 10px;
+  }
+
+  .comment-item {
+    padding: 8px;
+  }
+
+  .comment-close-button {
+    width: 90px;
+    height: 35px;
+    font-size: 12px;
+  }
+}

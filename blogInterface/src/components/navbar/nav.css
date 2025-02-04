@@ -1,0 +1,104 @@
+/* Universal Styles */
+* {
+  box-sizing: border-box; /* Ensure consistent box model */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center;
+  padding: 20px 30px; /* Add inner spacing */
+  width: 100%; /* Restrict to full width */
+  background-color: #1a1a2e; /* Deep blue for contrast */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: sticky;
+  z-index: 2000;
+  top: 0;
+}
+
+/* Logo Styling */
+.logo span {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    45deg,
+    #ff007b,
+    #ffae00,
+    #4dff00
+  ); /* Flashy gradient */
+  -webkit-background-clip: text; /* Clip gradient to text */
+  -webkit-text-fill-color: transparent; /* Make the gradient visible */
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: transform 0.3s, opacity 0.3s; /* Add smooth effects */
+}
+
+.logo a:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  opacity: 0.9;
+}
+
+/* Links Container */
+.links ul {
+  display: flex;
+  gap: 1.5rem; /* Adjust spacing between items */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links Styling */
+.links ul li {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffffff; /* White text for links */
+  cursor: pointer;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: inherit; /* Match the parent's color */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.links ul li a:hover {
+  color: #ffae00; /* Orange for hover effect */
+  transform: scale(1.1); /* Slight zoom */
+}
+
+/* Logout Button */
+.logout {
+  color: #f44336; /* Reddish tone for logout */
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logout:hover {
+  color: #ffae00; /* Flashy orange hover effect */
+  transform: scale(1.1);
+}
+
+.navbar .logo span img {
+  width: 30px; /* Adjust the size of the image */
+  height: 30px; /* Maintain a consistent aspect ratio */
+  object-fit: contain; /* Ensures the image scales without distortion */
+  transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.navbar .links ul li:hover {
+  transform: scale(1.1); /* Slightly enlarge the list item on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+.navbar .logo span:hover img {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+}

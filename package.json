@@ -1,0 +1,39 @@
+{
+  "name": "letsomma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon demoRest/app.js",
+    "build": "npm install && npm install --prefix blogInterface && npm run build --prefix blogInterface",
+    "start": "cross-env NODE_ENV=production node demoRest/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "method-override": "^3.0.0",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.5.1",
+    "connect-pg-simple": "^10.0.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express-validator": "^7.2.1",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.9",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+.landing {
+  background-image: url("../../assets/bag.jpg");
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Keeps the image centered */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the image fixed during scroll */
+  min-height: 100vh; /* Ensures at least the full viewport height is covered */
+  width: 100%; /* Full width of the page */
+}
+
+.video {
+  height: 60vh;
+  width: 100%;
+  position: relative; /* Ensures the .video container is the reference for the child video */
+  overflow: hidden;
+  top: 0;
+}
+
+.background {
+  height: 100%; /* Fill the container's height */
+  width: 100%; /* Fill the container's width */
+  position: absolute; /* Position within the .video container */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  object-fit: cover; /* Ensure the video covers the container fully */
+  z-index: 1; /* Ensure the video is visible above other elements */
+}

@@ -1,0 +1,7 @@
+.holder {
+  padding: 10px;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  border: 2px solid green;
+}

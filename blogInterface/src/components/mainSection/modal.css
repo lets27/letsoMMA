@@ -1,0 +1,119 @@
+/* Prevent scrolling when modal is open */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Form styles */
+.m p {
+  margin: 0; /* Remove default margin */
+  height: 20px;
+}
+
+.m form input {
+  margin-top: 0; /* Ensure no extra space between text and input */
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+}
+/* Style the input element when focused */
+.m form input:focus {
+  border-color: #007bff; /* Change border color when focused */
+  outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a soft blue glow */
+}
+
+form button {
+  width: 100%;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+/* Comment list styles */
+.comment-list {
+  padding: 20px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.comment-list h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.comment-list ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  gap: 1rem;
+}
+
+.comment-list li {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-list .comment {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 60px;
+}
+
+.comment-list li:hover {
+  background-color: #e0e0e0;
+}
+
+.comment-list .comment p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.comment-list .comment strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.comment-list .comment p:first-child {
+  margin-bottom: 5px;
+}
+.spinner {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 2px solid #444;
+  box-shadow: -10px -10px 10px #6359f8, 0px -10px 10px 0px #9c32e2,
+    10px -10px 10px #f36896, 10px 0 10px #ff0b0b, 10px 10px 10px 0px #ff5500,
+    0 10px 10px 0px #ff9500, -10px 10px 10px 0px #ffb700;
+  animation: rot55 0.7s linear infinite;
+}
+
+.spinnerin {
+  border: 2px solid #444;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rot55 {
+  to {
+    transform: rotate(360deg);
+  }
+}
